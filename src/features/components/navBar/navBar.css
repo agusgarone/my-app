@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(../../../fonts/Montserrat-Light.ttf) format("truetype");
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 23vh;
+  color: white;
+  padding-top: 15px;
+  font-family: Montserrat;
+  /* position: fixed; */
+}
+.izq {
+  flex: 1;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+}
+
+/* parte centro */
+.centro {
+  flex: 1;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.btn::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.5s ease-out;
+}
+.btn:hover::after {
+  display: block;
+  width: 100%;
+}
+
+.der {
+  flex: 1;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}

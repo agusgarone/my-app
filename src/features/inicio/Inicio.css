@@ -1,0 +1,27 @@
+.body {
+  width: 100%;
+  /* padding: 0; */
+  /* margin: 0; */
+  /* box-sizing: border-box; */
+  overflow: hidden !important;
+}
+
+.pantallaInicio {
+  margin-top: -20px;
+  height: 101vh;
+  width: 100vw;
+  background-color: #141814;
+}
+.vector1,
+.vector2,
+.vector3 {
+  padding: 0;
+  margin-top: -0.5px;
+  width: 100%;
+}
+.pantallaSobreMi {
+  margin-top: -20px;
+  height: 101vh;
+  width: 100vw;
+  background-color: #141814;
+}
