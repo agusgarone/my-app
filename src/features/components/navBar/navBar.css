@@ -5,15 +5,16 @@
 }
 
 .navbar {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 23vh;
+  height: 15vh;
+  width: 100%;
   color: white;
   padding-top: 15px;
   font-family: Montserrat;
-  /* position: fixed; */
 }
 .izq {
   flex: 1;
@@ -39,6 +40,14 @@ li {
   margin: 0 10px;
   cursor: pointer;
 }
+/* .btn {
+}
+
+.btn:hover {
+  font-weight: 700;
+  transition: all 0.5s ease-out;
+} */
+
 .btn::after {
   content: "";
   display: block;
@@ -50,6 +59,7 @@ li {
 .btn:hover::after {
   display: block;
   width: 100%;
+  font-weight: 700;
 }
 
 .der {
