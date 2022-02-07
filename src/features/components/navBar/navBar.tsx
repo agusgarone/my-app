@@ -8,10 +8,18 @@ export const Navbar = () => {
       </div>
       <div className="centro">
         <ul>
-          <li className="btn">Inicio</li>
-          <li className="btn">Sobre mi</li>
-          <li className="btn">Proyectos</li>
-          <li className="btn">Contacto</li>
+          <li className="btn">
+            <a href="#Inicio">Inicio</a>
+          </li>
+          <li className="btn">
+            <a href="#sobreMi">Sobre mi</a>
+          </li>
+          <li className="btn">
+            <a href="#proyectos">Proyectos</a>
+          </li>
+          <li className="btn">
+            <a href="#contacto">Contactos</a>
+          </li>
         </ul>
       </div>
       <div className="der">

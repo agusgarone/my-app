@@ -1,9 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./screenProyect.css";
 import vector2 from "../../../vector2.svg";
 import vector3 from "../../../vector3.svg";
-import img1 from "../../../image1.png";
-import img2 from "../../../image2.png";
-
 import { Carousel } from "antd";
 import "antd/dist/antd.css";
 
@@ -12,7 +10,9 @@ export const Proyect = () => {
     <>
       <img src={vector2} alt="vector2" />
       <div className="pantallaProyecto">
-        <p>Proyectos</p>
+        <p>
+          <a id="proyectos">Proyectos</a>
+        </p>
         <div className="infoProyectos">
           <div className="carrousel">
             <Carousel

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-has-content */
 import "./screenHome.css";
 import { Navbar } from "../navBar/navBar";
 import vector1 from "../../../vector1.svg";
@@ -5,6 +7,7 @@ export const Home = () => {
   return (
     <>
       <div className="pantallaInicio">
+        <a id="Inicio"></a>
         <Navbar />
         <div className="contenedor">
           <div className="parteIzq">

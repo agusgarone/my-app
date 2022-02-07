@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(../../../fonts/Montserrat-Light.ttf) format("truetype");
+}
+
+.pantallaContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+  /* background-color: red; */
+  height: 453px;
+  overflow: hidden;
+  scroll-behavior: smooth !important;
+}
+
+.pantallaContacto > p {
+  margin-bottom: 60px;
+}
+
+.pantallaContacto > p > a {
+  font-size: 38px;
+  font-weight: 500;
+  cursor: auto;
+  /* text-decoration: none; */
+  color: black !important;
+}
+
+.redesSociales {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  /* background-color: red; */
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.ig {
+  width: 50px;
+  cursor: pointer;
+}
+
+.link {
+  width: 32px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.git {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.btn-cv {
+  width: 140px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 100;
+}
+.button {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  width: 140px;
+  height: 45px;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  color: black !important;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+.button:hover {
+  background-color: #141814;
+  box-shadow: 0px 15px 20px #070807;
+  color: #fff !important;
+  transform: translateY(-7px);
+}
+
+.vector4 {
+  position: absolute;
+  right: 0%;
+  margin-top: 191px;
+}
+
+.btn-toUp {
+  position: absolute;
+  left: 10%;
+  width: 120px;
+  margin-top: 300px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #141814;
+  font-family: Montserrat;
+  cursor: pointer;
+}
