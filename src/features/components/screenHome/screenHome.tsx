@@ -38,6 +38,14 @@ export const Home = () => {
             <p style={{ color: "white" }}>foto mia</p>
           </div>
         </div>
+        <a href="#sobreMi" className="scroll-down">
+          <div className="mouse">
+            <span></span>
+          </div>
+          <div className="arrow">
+            <span></span>
+          </div>
+        </a>
       </div>
       <img src={vector1} alt="vector1" className="vector1" />
     </>

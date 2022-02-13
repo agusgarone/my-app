@@ -40,3 +40,70 @@
   margin-top: -0.05%;
   width: 100%;
 }
+
+.scroll-down {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mouse {
+  width: 1.8rem;
+  height: 3.5rem;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+}
+.mouse span {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  margin: 1.5rem auto;
+  animation: scrolldown 1.5s linear infinite;
+}
+
+.arrow span {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  transform: rotate(45deg);
+  animation: arrowdown 1s alternate infinite;
+}
+
+@keyframes scrolldown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}
+@keyframes arrowdown {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
