@@ -4,6 +4,11 @@ import "./screenHome.css";
 import { Navbar } from "../navBar/navBar";
 import vector1 from "../../../vector1.svg";
 export const Home = () => {
+  window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    navbar?.classList.toggle("sticky", window.scrollY > 0);
+  });
+
   return (
     <>
       <div className="pantallaInicio">
