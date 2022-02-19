@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./screenProyect.css";
 import vector2 from "../../../vector2.svg";
@@ -69,39 +70,26 @@ export const Proyect = () => {
   const renderProyectos = (index: number) => {
     setProyecto(proyectos[index]);
   };
-  console.log(proyecto?.nombre);
 
   return (
     <>
-      <img src={vector2} alt="vector2" />
+      <img id="proyectos" src={vector2} alt="vector2" />
       <div className="pantallaProyecto">
         <p>
-          <a id="proyectos">Proyectos</a>
+          <a>Proyectos</a>
         </p>
         <div className="infoProyectos">
           <div className="carrousel">
             <Carousel
               autoplay
               className="carousel"
-              style={{ width: "600px", height: "400px" }}
+              style={{ width: "700px", height: "400px" }}
               //   afterChange={(e) => console.log(e)}
               key={proyectos.length}
               beforeChange={(e, i) => {
-                console.log(e);
-                console.log(i);
-                renderProyectos(e);
+                renderProyectos(i);
               }}
             >
-              <div
-                className="carousel-item"
-                onClick={() => {
-                  onClick("https://github.com/agusgarone/PokemonCard");
-                }}
-              >
-                <h3 className="contentStyle">
-                  <img className="img" src={pokeCard} alt="" />
-                </h3>
-              </div>
               <div
                 className="carousel-item"
                 onClick={() => {
@@ -152,7 +140,18 @@ export const Proyect = () => {
                   <img className="img" src={pagShop} alt="" />
                 </h3>
               </div>
+              <div
+                className="carousel-item"
+                onClick={() => {
+                  onClick("https://github.com/agusgarone/PokemonCard");
+                }}
+              >
+                <h3 className="contentStyle">
+                  <img className="img" src={pokeCard} alt="" />
+                </h3>
+              </div>
             </Carousel>
+            <div className="filter"></div>
           </div>
           <div className="detalle">
             <p className="titulo">{proyecto?.nombre}</p>

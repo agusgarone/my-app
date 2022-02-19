@@ -15,6 +15,7 @@
   color: white;
   padding-top: 15px;
   font-family: Montserrat;
+  z-index: 100;
   transition: 0.6s;
 }
 

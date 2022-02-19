@@ -8,8 +8,20 @@ import Contact from "../components/screenContact/screenContact";
 // import vector3 from "../../vector3.svg";
 
 export const Inicio = () => {
+  let mouseCursor = document.querySelector<HTMLElement>(".cursor");
+
+  window.addEventListener("mousemove", cursor);
+
+  function cursor(e: any) {
+    if (mouseCursor) {
+      mouseCursor.style.top = e.pageY + "px";
+      mouseCursor.style.left = e.pageX + "px";
+    }
+  }
+
   return (
     <div className="body">
+      <div className="cursor"></div>
       <Home />
       <About />
       <Proyect />
