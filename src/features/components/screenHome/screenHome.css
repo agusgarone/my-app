@@ -80,6 +80,40 @@
   animation: arrowdown 1s alternate infinite;
 }
 
+#text {
+  position: absolute !important;
+  top: 20% !important;
+  left: 10% !important;
+}
+
+#astronaut {
+  position: absolute !important;
+  top: 30% !important;
+  left: 20% !important;
+}
+
+#planet1 {
+  position: absolute !important;
+  top: 40% !important;
+  left: 30% !important;
+}
+
+#planet2 {
+  position: absolute !important;
+  top: 50% !important;
+  left: 40% !important;
+}
+
+#rocket {
+  position: absolute !important;
+  top: 60% !important;
+  left: 80% !important;
+}
+
+#scene {
+  height: 100% !important;
+}
+
 @keyframes scrolldown {
   0% {
     opacity: 0;

@@ -151,7 +151,7 @@ export const Proyect = () => {
                 </h3>
               </div>
             </Carousel>
-            <div className="filter"></div>
+            {/* <div className="filter"></div> */}
           </div>
           <div className="detalle">
             <p className="titulo">{proyecto?.nombre}</p>
