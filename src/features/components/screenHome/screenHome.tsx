@@ -1,101 +1,83 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import "./screenHome.css";
-// import { Navbar } from "../navBar/navBar";
-
-// export const Home = () => {
-//   window.addEventListener("scroll", () => {
-//     const navbar = document.querySelector(".navbar");
-//     navbar?.classList.toggle("sticky", window.scrollY > 0);
-//   });
-
-//   return (
-//     <>
-//       <div className="pantallaInicio">
-//         <a id="Inicio"></a>
-//         <Navbar />
-//         <div className="contenedor">
-//           <div className="parteIzq">
-//             <div className="info">
-//               <p
-//                 style={{
-//                   color: "white",
-//                   fontSize: 55,
-//                   marginBottom: 0,
-//                   textAlign: "left",
-//                 }}
-//               >
-//                 Agustin Garone
-//               </p>
-//               <p
-//                 style={{
-//                   color: "#777977",
-//                   fontSize: 38,
-//                   marginTop: 0,
-//                   textAlign: "left",
-//                 }}
-//               >
-//                 Frontend developer
-//               </p>
-//             </div>
-//           </div>
-//           <div className="parteDer">
-//             <p style={{ color: "white" }}>foto mia</p>
-//           </div>
-//         </div>
-//         <a href="#sobreMi" className="scroll-down">
-//           <div className="mouse">
-//             <span></span>
-//           </div>
-//           <div className="arrow">
-//             <span></span>
-//           </div>
-//         </a>
-//       </div>
-//       <img src={vector1} alt="vector1" className="vector1" />
-//     </>
-//   );
-// };
-
-// export default Home;
 
 import React, { useEffect } from "react";
 import Styled from "styled-components";
 import Parallax from "parallax-js";
 import PropTypes from "prop-types";
+import { Navbar } from "../navBar/navBar";
+import vector1 from "../../../vector1.svg";
 
 import backgroundImage from "../../../icons/background.jpg";
-import react from "../../../icons/react.png";
-import js from "../../../icons/javascript.png";
-import css from "../../../icons/css.png";
-import html from "../../../icons/html.png";
-import dart from "../../../icons/dart.png";
+
+import Rectangle53 from "../../../image/decoration/Rectangle53.png";
+import Rectangle54 from "../../../image/decoration/Rectangle54.png";
+import Rectangle55 from "../../../image/decoration/Rectangle55.png";
+import Rectangle56 from "../../../image/decoration/Rectangle56.png";
+import Rectangle57 from "../../../image/decoration/Rectangle57.png";
+import Rectangle58 from "../../../image/decoration/Rectangle58.png";
+import Rectangle59 from "../../../image/decoration/Rectangle59.png";
+import Rectangle60 from "../../../image/decoration/Rectangle60.png";
+import Rectangle61 from "../../../image/decoration/Rectangle61.png";
+import Rectangle62 from "../../../image/decoration/Rectangle62.png";
+import Rectangle63 from "../../../image/decoration/Rectangle63.png";
 
 const layers = [
   {
-    name: "text",
-    image: react,
+    name: "Rectangle53",
+    image: Rectangle53,
     dataDepth: "0.1",
   },
   {
-    name: "astronaut",
-    image: js,
-    dataDepth: "1.5",
+    name: "Rectangle54",
+    image: Rectangle54,
+    dataDepth: "0.36",
   },
   {
-    name: "planet1",
-    image: css,
-    dataDepth: "0.8",
+    name: "Rectangle55",
+    image: Rectangle55,
+    dataDepth: "0.41",
   },
   {
-    name: "planet2",
-    image: html,
+    name: "Rectangle56",
+    image: Rectangle56,
     dataDepth: "-0.5",
   },
   {
-    name: "rocket",
-    image: dart,
-    dataDepth: "0.5",
+    name: "Rectangle57",
+    image: Rectangle57,
+    dataDepth: "-0.2",
+  },
+  {
+    name: "Rectangle58",
+    image: Rectangle58,
+    dataDepth: "-0.48",
+  },
+  {
+    name: "Rectangle59",
+    image: Rectangle59,
+    dataDepth: "0.3",
+  },
+  {
+    name: "Rectangle60",
+    image: Rectangle60,
+    dataDepth: "0.28",
+  },
+  {
+    name: "Rectangle61",
+    image: Rectangle61,
+    dataDepth: "-0.2",
+  },
+  {
+    name: "Rectangle62",
+    image: Rectangle62,
+    dataDepth: "0.57",
+  },
+  {
+    name: "Rectangle63",
+    image: Rectangle63,
+    dataDepth: "0.48",
   },
 ];
 
@@ -103,13 +85,14 @@ const Container = Styled.div`
   width: 100%;
 	height: 100vh;
   display: block;
+  position: absolute;
 	overflow: hidden;
-	background: url(${backgroundImage});
+	background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
 `;
 
-const ParallaxImagesContainer = ({
+const Home = ({
   backgroundImage,
   layers,
 }: {
@@ -121,24 +104,73 @@ const ParallaxImagesContainer = ({
     new Parallax(scene);
   });
 
+  window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    navbar?.classList.toggle("sticky", window.scrollY > 0);
+  });
+
   return (
-    <Container backgroundImage={backgroundImage}>
-      <div id="scene">
-        {layers.map((l: any, index: any) => (
-          <img
-            id={l.name}
-            key={index}
-            data-depth={l.dataDepth}
-            src={l.image}
-            alt={l.name}
-          />
-        ))}
+    <>
+      <Container className="decoration" backgroundImage={backgroundImage}>
+        <div id="scene">
+          {layers.map((l: any, index: any) => (
+            <img
+              id={l.name}
+              key={index}
+              data-depth={l.dataDepth}
+              src={l.image}
+              alt={l.name}
+            />
+          ))}
+        </div>
+      </Container>
+      <div className="pantallaInicio">
+        <a id="Inicio"></a>
+        <Navbar />
+        <div className="contenedor">
+          <div className="parteIzq">
+            <div className="info">
+              <p
+                style={{
+                  color: "white",
+                  fontSize: 55,
+                  marginBottom: 0,
+                  textAlign: "left",
+                }}
+              >
+                Agustin Garone
+              </p>
+              <p
+                style={{
+                  color: "#777977",
+                  fontSize: 38,
+                  marginTop: 0,
+                  textAlign: "left",
+                }}
+              >
+                Frontend developer
+              </p>
+            </div>
+          </div>
+          <div className="parteDer">
+            <p style={{ color: "white" }}>foto mia</p>
+          </div>
+        </div>
+        <a href="#sobreMi" className="scroll-down">
+          <div className="mouse">
+            <span></span>
+          </div>
+          <div className="arrow">
+            <span></span>
+          </div>
+        </a>
       </div>
-    </Container>
+      <img src={vector1} alt="vector1" className="vector1" />
+    </>
   );
 };
 
-ParallaxImagesContainer.propTypes = {
+Home.propTypes = {
   backgroundImage: PropTypes.string,
   layers: PropTypes.arrayOf(
     PropTypes.shape({
@@ -149,9 +181,9 @@ ParallaxImagesContainer.propTypes = {
   ),
 };
 
-ParallaxImagesContainer.defaultProps = {
+Home.defaultProps = {
   backgroundImage: backgroundImage,
   layers: layers,
 };
 
-export default ParallaxImagesContainer;
+export default Home;

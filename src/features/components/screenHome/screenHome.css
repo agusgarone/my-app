@@ -80,34 +80,65 @@
   animation: arrowdown 1s alternate infinite;
 }
 
-#text {
+#Rectangle53 {
   position: absolute !important;
-  top: 20% !important;
-  left: 10% !important;
+  top: 15% !important;
+  left: 25% !important;
 }
 
-#astronaut {
+#Rectangle54 {
   position: absolute !important;
   top: 30% !important;
-  left: 20% !important;
+  left: 46% !important;
 }
 
-#planet1 {
+#Rectangle55 {
   position: absolute !important;
-  top: 40% !important;
-  left: 30% !important;
+  top: 14% !important;
+  left: 81% !important;
 }
 
-#planet2 {
+#Rectangle56 {
   position: absolute !important;
   top: 50% !important;
   left: 40% !important;
 }
 
-#rocket {
+#Rectangle57 {
   position: absolute !important;
-  top: 60% !important;
-  left: 80% !important;
+  top: 55% !important;
+  left: 37% !important;
+}
+
+#Rectangle58 {
+  position: absolute !important;
+  top: 63% !important;
+  left: 87% !important;
+}
+#Rectangle59 {
+  position: absolute !important;
+  top: 80% !important;
+  left: 13% !important;
+}
+#Rectangle60 {
+  position: absolute !important;
+  top: 10% !important;
+  left: 56% !important;
+}
+#Rectangle61 {
+  position: absolute !important;
+  top: 41% !important;
+  left: 90% !important;
+}
+#Rectangle62 {
+  position: absolute !important;
+  top: 10% !important;
+  left: 10% !important;
+}
+#Rectangle63 {
+  position: absolute !important;
+  top: 80% !important;
+  left: 73% !important;
 }
 
 #scene {

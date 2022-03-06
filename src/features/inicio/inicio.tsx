@@ -1,6 +1,6 @@
 import "./Inicio.css";
 // import { Home } from "../components/screenHome/screenHome";
-import ParallaxImagesContainer from "../components/screenHome/screenHome";
+import Home from "../components/screenHome/screenHome";
 import About from "../components/screenAbout/screenAbout";
 import Proyect from "../components/screenProyect/screenProyect";
 import Contact from "../components/screenContact/screenContact";
@@ -23,7 +23,7 @@ export const Inicio = () => {
   return (
     <div className="body">
       {/* <div className="cursor"></div> */}
-      <ParallaxImagesContainer />
+      <Home />
       <About />
       <Proyect />
       <Contact />
