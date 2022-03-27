@@ -13,6 +13,7 @@ import ferrari from "../../../image/ferrariEvolution.png";
 import introAnimation from "../../../image/introAnimation.png";
 import pagShop from "../../../image/PagShop.png";
 import pokeCard from "../../../image/pokeCards.png";
+import { Trans } from "react-i18next";
 
 export const Proyect = () => {
   const [proyecto, setProyecto] = useState<ProyectoModel>();
@@ -76,7 +77,9 @@ export const Proyect = () => {
       <img id="proyectos" src={vector2} alt="vector2" />
       <div className="pantallaProyecto">
         <p>
-          <a>Proyectos</a>
+          <a>
+            <Trans i18nKey="proyectos">proyectos</Trans>
+          </a>
         </p>
         <div className="infoProyectos">
           <div className="carrousel">

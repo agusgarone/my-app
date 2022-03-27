@@ -22,6 +22,7 @@
 .sticky {
   background-color: #fff;
   color: black;
+  height: 10vh;
 }
 
 .sticky .centro ul li {
@@ -91,4 +92,48 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 10px;
+}
+
+/* Lista de configuracion */
+
+.listConfig {
+  height: 90vh;
+  width: 20vw !important;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: black;
+  transform: translateX(0%);
+  transition: 0.5s ease-in;
+}
+.cabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tema {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.temas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.titulos {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.activo {
+  transform: translateX(100%);
+}
+
+.btn-open {
+  cursor: pointer;
 }

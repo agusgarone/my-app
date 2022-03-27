@@ -9,6 +9,7 @@ import css from "../../../icons/css.png";
 import html from "../../../icons/html.png";
 import dart from "../../../icons/dart.png";
 import github from "../../../icons/github.png";
+import { Trans } from "react-i18next";
 
 export const About = () => {
   const onClick = (link: any) => {
@@ -20,18 +21,19 @@ export const About = () => {
       <div className="pantallaAbout">
         <div className="AboutMe">
           <p className="titulo">
-            <a id="sobreMi">Sobre mi</a>
+            <a id="sobreMi">
+              <Trans i18nKey="sobreMi">sobreMi</Trans>
+            </a>
           </p>
           <p className="info">
-            Soy (titulo secundario), actualmente estoy trabajando en Bewise,
-            tengo 19 años, me apasiona el desarrollo web y con muchas ganas de
-            seguir aprendiendo nuevos conocimientos en este mundo de la
-            tecnologia.
+            <Trans i18nKey="descripcionMia">descripcionMia</Trans>
           </p>
         </div>
         <hr className="lineaDivisora" />
         <div className="cursos">
-          <p>Cursos</p>
+          <p>
+            <Trans i18nKey="cursos">cursos</Trans>
+          </p>
           <div className="tarjetasCursos">
             <div
               className="tarjeta curso1"
@@ -63,7 +65,9 @@ export const About = () => {
         </div>
         <hr className="lineaDivisora" />
         <div className="tecnologias">
-          <p>Tecnologias que manejo</p>
+          <p>
+            <Trans i18nKey="tecnologiasQueManejo">tecnologiasQueManejo</Trans>
+          </p>
           <div className="icons">
             <img src={react} alt="react" className="icon" />
             <img src={js} alt="js" className="icon" />

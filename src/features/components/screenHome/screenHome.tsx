@@ -22,6 +22,7 @@ import Rectangle60 from "../../../image/decoration/Rectangle60.png";
 import Rectangle61 from "../../../image/decoration/Rectangle61.png";
 import Rectangle62 from "../../../image/decoration/Rectangle62.png";
 import Rectangle63 from "../../../image/decoration/Rectangle63.png";
+import { Trans, useTranslation } from "react-i18next";
 
 const layers = [
   {
@@ -109,6 +110,13 @@ const Home = ({
     navbar?.classList.toggle("sticky", window.scrollY > 0);
   });
 
+  const { t } = useTranslation();
+
+  // const changeLanguage = (lng) => {
+  //   console.log("lenguaje", lng);
+  //   i18n.changeLanguage(lng);
+  // };
+
   return (
     <>
       <Container className="decoration" backgroundImage={backgroundImage}>
@@ -153,7 +161,21 @@ const Home = ({
             </div>
           </div>
           <div className="parteDer">
+            <h2>{t("Bienvenido a React")}</h2>
+            <Trans i18nKey="Probando">Probando</Trans>
             <p style={{ color: "white" }}>foto mia</p>
+            {/* <button
+              style={{ zIndex: 10000 }}
+              onClick={() => changeLanguage("de")}
+            >
+              de
+            </button>
+            <button
+              style={{ zIndex: 10000 }}
+              onClick={() => changeLanguage("en")}
+            >
+              en
+            </button> */}
           </div>
         </div>
         <a href="#sobreMi" className="scroll-down">

@@ -5,6 +5,7 @@ import git from "../../../icons/git.png";
 import linkedin from "../../../icons/linkedin.png";
 import vector6 from "../../../vector6.svg";
 import "antd/dist/antd.css";
+import { Trans, useTranslation } from "react-i18next";
 
 export const Contact = () => {
   const onClick = (link: any) => {
@@ -12,12 +13,14 @@ export const Contact = () => {
     window.open(link, "_blank");
   };
 
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <div className="pantallaContacto">
         <p>
           <a id="contacto" className="titulo">
-            Contacto
+            <Trans i18nKey="contacto">contacto</Trans>
           </a>
         </p>
         <div className="redesSociales">
@@ -51,11 +54,13 @@ export const Contact = () => {
             className="button"
             id="cv"
           >
-            Descargar CV
+            <Trans i18nKey="descargarCV">descargarCV</Trans>
           </a>
         </div>
         <div className="btn-toUp">
-          <a href="#Inicio">Para arriba</a>
+          <a href="#Inicio">
+            <Trans i18nKey="paraArriba">paraArriba</Trans>
+          </a>
         </div>
         <img src={vector6} alt="vector4" className="vector4" />
       </div>
