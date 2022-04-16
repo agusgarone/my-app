@@ -22,7 +22,9 @@
     "react-parallax": "^3.3.0",
     "react-redux": "^7.2.6",
     "react-scripts": "5.0.0",
+    "react-tsparticles": "^2.0.5",
     "styled-components": "^5.3.3",
+    "tsparticles": "^2.0.5",
     "typescript": "~4.1.5"
   },
   "scripts": {
