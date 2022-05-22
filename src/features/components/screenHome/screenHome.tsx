@@ -108,6 +108,11 @@ const Home = ({
   window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar");
     navbar?.classList.toggle("sticky", window.scrollY > 0);
+
+    const lang = document.querySelectorAll(".lang");
+    lang?.forEach((item) => {
+      item.classList.toggle("styleLang", window.scrollY > 0);
+    });
   });
 
   const { t } = useTranslation();

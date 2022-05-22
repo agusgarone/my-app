@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import "./navBar.css";
 import { Trans, useTranslation } from "react-i18next";
-import arrow from "../../../image/arrow.png";
 
 export const Navbar = () => {
   useEffect(() => {
@@ -76,10 +75,13 @@ export const Navbar = () => {
         {/* <p className="titulos">Idioma</p> */}
         {/* <div className="temas"> */}
         <p className="lang up" onClick={() => changeLanguage("es")}>
-          <img className="arrow" src={arrow} alt="arrow"></img>
+          <span>ES</span>
         </p>
         <p className="lang down" onClick={() => changeLanguage("en")}>
-          <img className="arrow" src={arrow} alt="arrow"></img>
+          <span>EN</span>
+        </p>
+        <p className="lang down" onClick={() => changeLanguage("it")}>
+          <span>IT</span>
         </p>
         {/* <p>Italiano</p> */}
         {/* </div> */}
