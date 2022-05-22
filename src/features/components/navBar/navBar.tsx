@@ -1,19 +1,19 @@
 import { useEffect } from "react";
 import "./navBar.css";
 import { Trans, useTranslation } from "react-i18next";
+import arrow from "../../../image/arrow.png";
 
 export const Navbar = () => {
   useEffect(() => {
-    const btnOpen = document.querySelector(".btn-open")!;
-    btnOpen.addEventListener("click", () => {
-      myFunction();
-    });
-
-    function myFunction() {
-      const listaConfig = document.querySelector(".listConfig")!;
-      listaConfig.classList.toggle("activo");
-    }
-    myFunction();
+    // const btnOpen = document.querySelector(".btn-open")!;
+    // btnOpen.addEventListener("click", () => {
+    //   myFunction();
+    // });
+    // function myFunction() {
+    //   const listaConfig = document.querySelector(".listConfig")!;
+    //   listaConfig.classList.toggle("activo");
+    // }
+    // myFunction();
   }, []);
 
   const { t, i18n } = useTranslation();
@@ -59,27 +59,31 @@ export const Navbar = () => {
       </div>
       <div className="listConfig">
         <div className="cabecera">
-          <p className="titulos">
+          {/* <p className="titulos">
             <Trans i18nKey="configuracion">configuracion</Trans>
-          </p>
-          <p className="cerrarConfig"></p>
+          </p> */}
+          {/* <p className="cerrarConfig"></p> */}
         </div>
-        <div className="tema">
-          <p className="titulos">Tema</p>
-          <div className="temas">
+        {/* <div className="tema"> */}
+        {/* <p className="titulos">Tema</p> */}
+        {/* <div className="temas">
             <p>rojo</p>
             <p>verde</p>
             <p>negro</p>
-          </div>
-        </div>
-        <div className="tema">
-          <p className="titulos">Idioma</p>
-          <div className="temas">
-            <p onClick={() => changeLanguage("es")}>Español</p>
-            <p onClick={() => changeLanguage("en")}>Ingles</p>
-            <p>Italiano</p>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
+        {/* <div className="tema"> */}
+        {/* <p className="titulos">Idioma</p> */}
+        {/* <div className="temas"> */}
+        <p className="lang up" onClick={() => changeLanguage("es")}>
+          <img className="arrow" src={arrow} alt="arrow"></img>
+        </p>
+        <p className="lang down" onClick={() => changeLanguage("en")}>
+          <img className="arrow" src={arrow} alt="arrow"></img>
+        </p>
+        {/* <p>Italiano</p> */}
+        {/* </div> */}
+        {/* </div> */}
       </div>
     </div>
   );
