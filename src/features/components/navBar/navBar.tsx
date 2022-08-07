@@ -1,26 +1,30 @@
+import React from 'react';
 import { useEffect } from "react";
 import "./navBar.css";
 import { Trans, useTranslation } from "react-i18next";
+import { Dropdown, Menu, Space } from 'antd';
 
 export const Navbar = () => {
-  useEffect(() => {
-    // const btnOpen = document.querySelector(".btn-open")!;
-    // btnOpen.addEventListener("click", () => {
-    //   myFunction();
-    // });
-    // function myFunction() {
-    //   const listaConfig = document.querySelector(".listConfig")!;
-    //   listaConfig.classList.toggle("activo");
-    // }
-    // myFunction();
-  }, []);
-
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
     console.log("lenguaje", lng);
     i18n.changeLanguage(lng);
   };
+
+  const menu = (
+    <Menu className='dropdown-idioma'>
+        <Menu.Item className='item-dropdown'><p style={{margin: 0}} onClick={() => changeLanguage("es")}>
+          <span>ES</span>
+        </p></Menu.Item>
+        <Menu.Item><p style={{margin: 0}} onClick={() => changeLanguage("en")}>
+          <span>EN</span>
+        </p></Menu.Item>
+        <Menu.Item><p style={{margin: 0}} onClick={() => changeLanguage("it")}>
+          <span>IT</span>
+        </p></Menu.Item>
+    </Menu>  
+  );
 
   return (
     <div className="navbar">
@@ -52,40 +56,13 @@ export const Navbar = () => {
         </ul>
       </div>
       <div className="der">
-        <p className="btn-open">
-          <Trans i18nKey="configuracion">configuracion</Trans>
-        </p>
-      </div>
-      <div className="listConfig">
-        <div className="cabecera">
-          {/* <p className="titulos">
-            <Trans i18nKey="configuracion">configuracion</Trans>
-          </p> */}
-          {/* <p className="cerrarConfig"></p> */}
-        </div>
-        {/* <div className="tema"> */}
-        {/* <p className="titulos">Tema</p> */}
-        {/* <div className="temas">
-            <p>rojo</p>
-            <p>verde</p>
-            <p>negro</p>
-          </div> */}
-        {/* </div> */}
-        {/* <div className="tema"> */}
-        {/* <p className="titulos">Idioma</p> */}
-        {/* <div className="temas"> */}
-        <p className="lang up" onClick={() => changeLanguage("es")}>
-          <span>ES</span>
-        </p>
-        <p className="lang down" onClick={() => changeLanguage("en")}>
-          <span>EN</span>
-        </p>
-        <p className="lang down" onClick={() => changeLanguage("it")}>
-          <span>IT</span>
-        </p>
-        {/* <p>Italiano</p> */}
-        {/* </div> */}
-        {/* </div> */}
+        <Dropdown overlay={menu}>
+          <a onClick={e => e.preventDefault()}>
+            <Space>
+              <Trans i18nKey="configuracion">configuracion</Trans>
+            </Space>
+          </a>
+        </Dropdown>
       </div>
     </div>
   );
