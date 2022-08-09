@@ -6,6 +6,7 @@ import linkedin from "../../../icons/linkedin.png";
 import vector6 from "../../../vector6.svg";
 import "antd/dist/antd.css";
 import { Trans, useTranslation } from "react-i18next";
+// import mycv from '../../../download/mycv.pdf';
 
 export const Contact = () => {
   const onClick = (link: any) => {
@@ -49,8 +50,8 @@ export const Contact = () => {
         </div>
         <div className="btn-cv">
           <a
-            href="/curriculum-vitae- Agustín Garone.pdf"
-            download="curriculum-Agustin_Garone"
+            href="../../../mycv.pdf"
+            download="agustingarone-cv.pdf"
             className="button"
             id="cv"
           >

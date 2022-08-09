@@ -20,7 +20,7 @@ i18n
           configuracion: "Configuracion",
           frontEndDeveloper: "Desarrollador Frontend",
           descripcionMia:
-            "Soy (titulo secundario), actualmente estoy trabajando en Bewise, tengo 19 años, me apasiona el desarrollo web y con muchas ganas de seguir aprendiendo nuevos conocimientos en este mundo de la tecnologia.",
+            "Soy Técnico en Informática profesional y personal en programación, actualmente estoy trabajando en Bewise, tengo 19 años, me apasiona el desarrollo web y con muchas ganas de seguir aprendiendo nuevos conocimientos en este mundo de la tecnologia.",
           cursos: "Cursos",
           tecnologiasQueManejo: "Tecnologias que manejo",
           contacto: "Contacto",
@@ -40,7 +40,7 @@ i18n
           configuracion: "Configuration",
           frontEndDeveloper: "Frontend Developer",
           descripcionMia:
-            "I am (titulo secundario), currently working in Bewise, I have 19 years, I am passionate about web development and with many goals to learn new skills in this world of technology.",
+            "I am Professional Computer Technician and programming staff, currently working in Bewise, I have 19 years, I am passionate about web development and with many goals to learn new skills in this world of technology.",
           cursos: "Courses",
           tecnologiasQueManejo: "Technologies I use",
           contacto: "Contact",
@@ -60,7 +60,7 @@ i18n
           configuracion: "Collocamento",
           frontEndDeveloper: "Sviluppatore Front End",
           descripcionMia:
-            "Sono (titulo secundario), attualmente lavoro in Bewise, ho 19 anni, sono appassionata di sviluppo web e desiderosa di continuare ad apprendere nuove conoscenze in questo mondo della tecnologia.",
+            "Sono Tecnico Informatico professionale e personale di programmazione, attualmente lavoro in Bewise, ho 19 anni, sono appassionata di sviluppo web e desiderosa di continuare ad apprendere nuove conoscenze in questo mondo della tecnologia.",
           cursos: "Corsi",
           tecnologiasQueManejo: "Tecnologie che utilizzo",
           contacto: "Contatto",
