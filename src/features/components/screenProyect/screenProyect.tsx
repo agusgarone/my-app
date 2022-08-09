@@ -74,7 +74,7 @@ export const Proyect = () => {
 
   return (
     <>
-      <img id="proyectos" src={vector2} alt="vector2" />
+      <img id="proyectos" src={vector2} alt="vector2" className="vector2" />
       <div className="pantallaProyecto">
         <p>
           <a>
@@ -162,7 +162,7 @@ export const Proyect = () => {
           </div>
         </div>
       </div>
-      <img src={vector3} alt="vector3" />
+      <img src={vector3} alt="vector3" className="vector3"/>
     </>
   );
 };

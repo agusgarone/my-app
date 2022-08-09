@@ -80,6 +80,20 @@
   animation: arrowdown 1s alternate infinite;
 }
 
+.title{
+  color: white;
+  font-size: 55px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.subtitle{
+  color: #777977;
+  font-size: 38px;
+  margin-top: 0;
+  text-align: left;
+}
+
 #Rectangle53 {
   position: absolute !important;
   top: 15% !important;
@@ -172,3 +186,28 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 426px) {
+  .contenedor{
+    flex-direction: column-reverse;
+    margin-top: 250px;
+  }
+  .title{
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+  .subtitle{
+    font-size: 30px;
+    text-align: center;
+  }
+  .decoration{
+    display: none !important;
+  }
+  .vector1{
+    margin-top: -0.17%;
+  }
+  .mouse{
+    width: 1.5rem;
+    height: 3rem;
+  }
+} 

@@ -111,3 +111,29 @@
   font-family: Montserrat;
   cursor: pointer;
 }
+
+@media (max-width: 426px) {
+  .pantallaContacto p .titulo {
+    font-size: 26px;
+  }
+  .pantallaContacto p{
+    margin-bottom: 38px;
+  }
+  .pantallaContacto .redesSociales{
+    margin-bottom: 26px;
+  }
+  .pantallaContacto .redesSociales .ig{
+    width: 40px;
+  }
+  .pantallaContacto .redesSociales .link{
+    width: 28px;
+    height: 30px;
+  }
+  .pantallaContacto .redesSociales .git{
+    width: 28px;
+    height: 30px;
+  }
+  .btn-toUp{
+    display: none;
+  }
+} 

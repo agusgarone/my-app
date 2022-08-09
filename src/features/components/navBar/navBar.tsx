@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import "./navBar.css";
 import { Trans, useTranslation } from "react-i18next";
 import { Dropdown, Menu, Space } from 'antd';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChartBar, faCog, faFolderOpen, faPlus, faSave } from '@fortawesome/free-solid-svg-icons';
 
 export const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -59,7 +61,8 @@ export const Navbar = () => {
         <Dropdown overlay={menu}>
           <a onClick={e => e.preventDefault()}>
             <Space>
-              <Trans i18nKey="configuracion">configuracion</Trans>
+              <span className='config-name'><Trans i18nKey="configuracion">configuracion</Trans></span>
+              <FontAwesomeIcon className='icon-config' icon={faCog} />
             </Space>
           </a>
         </Dropdown>

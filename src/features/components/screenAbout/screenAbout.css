@@ -111,18 +111,47 @@
   z-index: 10 !important;
 }
 
-/* .icon {
-  width: calc(100% -10);
-} */
-
 .particulas{
-  /* background-color: yellow; */
   position: absolute;
   height: 120%;
   width: 100%;
 }
 
-/* .particulas > canvas{
-  width: 300px !important;
-  height: 300px !important;
-} */
+@media (max-width: 425px) {
+  .particulas{
+    display: none;
+  }
+  .titulo{
+    font-size: 26px;
+  }
+  .info{
+    font-size: 16px;
+  }
+  .lineaDivisora{
+    height: 32px
+  }
+  .cursos p {
+    font-size: 26px;
+  }
+  .infoTarj{
+    margin-top: 5px;
+    font-size: 15px !important;
+  }
+  .cursos .tarjetasCursos{
+    flex-direction: column;
+    width: 60%;
+    height: 600px;
+  }
+  .tecnologias p{
+    font-size: 26px;
+  }
+  .icons{
+    width: 72%;
+    flex-wrap: wrap;
+  }
+  .icons .icon{
+    width: 20% !important;
+    height: 20% !important;
+    margin: 5px 10px;
+  }
+}

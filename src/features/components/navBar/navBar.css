@@ -25,6 +25,10 @@
   height: 10vh;
 }
 
+.stickyIcon {
+  color: black;
+}
+
 .sticky .centro ul li {
   color: black;
 }
@@ -171,5 +175,28 @@ a {
   justify-content: space-between;
 }
 
+@media (max-width: 426px) {
+  .navbar{
+    width: 100%;
+  }
+  .izq{
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .izq p {
+    font-size: 20px !important;
+  }
+  .centro{
+    display: none;
+  }
+  .config-name{
+    display: none !important;
+  }
+  .der{
+    padding-top: 0px;
+    padding-right: 20px;
+    justify-content: flex-end;
+  }
+} 
 
 

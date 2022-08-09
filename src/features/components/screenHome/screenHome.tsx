@@ -108,6 +108,8 @@ const Home = ({
   window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar");
     navbar?.classList.toggle("sticky", window.scrollY > 0);
+    const navbarIcon = document.querySelector(".icon-config");
+    navbarIcon?.classList.toggle("stickyIcon", window.scrollY > 0);
 
     const lang = document.querySelectorAll(".lang");
     lang?.forEach((item) => {
@@ -144,43 +146,19 @@ const Home = ({
           <div className="parteIzq">
             <div className="info">
               <p
-                style={{
-                  color: "white",
-                  fontSize: 55,
-                  marginBottom: 0,
-                  textAlign: "left",
-                }}
+                className="title"
               >
                 Agustin Garone
               </p>
               <p
-                style={{
-                  color: "#777977",
-                  fontSize: 38,
-                  marginTop: 0,
-                  textAlign: "left",
-                }}
+                className="subtitle"
               >
                 Frontend developer
               </p>
             </div>
           </div>
           <div className="parteDer">
-            <h2>{t("Bienvenido a React")}</h2>
-            <Trans i18nKey="Probando">Probando</Trans>
             <p style={{ color: "white" }}>foto mia</p>
-            {/* <button
-              style={{ zIndex: 10000 }}
-              onClick={() => changeLanguage("de")}
-            >
-              de
-            </button>
-            <button
-              style={{ zIndex: 10000 }}
-              onClick={() => changeLanguage("en")}
-            >
-              en
-            </button> */}
           </div>
         </div>
         <a href="#sobreMi" className="scroll-down">
