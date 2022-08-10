@@ -50,8 +50,8 @@ export const Contact = () => {
         </div>
         <div className="btn-cv">
           <a
-            href="../../../mycv.pdf"
-            download="agustingarone-cv.pdf"
+            href="/download/mycv.pdf"
+            download
             className="button"
             id="cv"
           >
